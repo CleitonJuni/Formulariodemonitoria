@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoria</h1>
+        <form id="monitoriaForm">
+            <label for="professor">Nome do Professor</label>
+            <select id="professor" name="professor">
+                <option value="">-Select-</option>
+            </select>
+            
+            <label for="aluno">Nome do Aluno</label>
+            <select id="aluno" name="aluno">
+                <option value="">-Select-</option>
+            </select>
+            
+            <label for="anoInicio">Ano de Início do curso *</label>
+            <input type="date" id="anoInicio" name="anoInicio" required>
+            
+            <label for="crCurso">CR do Curso</label>
+            <input type="range" id="crCurso" name="crCurso" min="0" max="100" value="0">
+            <span id="crCursoValue">0%</span>
+            
+            <label for="porcentagemCurso">Porcentagem do Curso</label>
+            <input type="range" id="porcentagemCurso" name="porcentagemCurso" min="0" max="100" value="0">
+            <span id="porcentagemCursoValue">0%</span>
+            
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

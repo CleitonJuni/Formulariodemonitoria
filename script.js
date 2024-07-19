@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyBO87y7ckUu9D1CmMUZq_IdcrDUxovSJHI';
+const API_KEY = 'api';
 const SHEET_ID = '1cGovKfDU9zKlSVvImRWyY3qBfFbAI2OT-OnCKJUQljM';
 const RANGE = 'Página1!A1:D5';
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const professors = new Set();
     const dataMap = new Map();
 
-    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${'1cGovKfDU9zKlSVvImRWyY3qBfFbAI2OT-OnCKJUQljM'}/values/${'Página1!A1:D5'}?key=${'AIzaSyBO87y7ckUu9D1CmMUZq_IdcrDUxovSJHI'}`)
+    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${'1cGovKfDU9zKlSVvImRWyY3qBfFbAI2OT-OnCKJUQljM'}/values/${'Página1!A1:D5'}?key=${'api'}`)
         .then(response => response.json())
         .then(data => {
             data.values.forEach(row => {
